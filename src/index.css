@@ -15,7 +15,7 @@ main {
   display: flex;
   align-items: center;
   height: 65px;
-  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  background-color: #55abc8;
   color: white;
   padding: 20px;
 }
@@ -36,35 +36,46 @@ main {
 }
 
 .form {
-  display: grid;
-  grid-template: 40px 40px / 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 17px;
   margin-bottom: 17px;
+}
+
+.addtext{
+  display: flex;
+  gap: 20px;
 }
 
 .form--input {
   font-family: "Karla", sans-serif;
   border-radius: 5px;
+  min-width: 300px;
+  padding: 10px 0px;
   border: 1px solid #D5D4D8;
   text-indent: 5px;
 }
 
 .form--button {
-  grid-column: 1 / -1;
   font-family: "Karla", sans-serif;
   border-radius: 5px;
-  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  background: #55abc8;
   color: white;
+  padding: 10px 40px;
   border: none;
   cursor: pointer;
 }
 
 .meme {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .meme--image {
   max-width: 100%;
+  height: 480px;
   border-radius: 3px;
 }
 
